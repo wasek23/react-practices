@@ -1,0 +1,120 @@
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 100px;
+    background-color: orangered;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+}
+
+/* User signed in */
+.userSignedIn{
+    width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 25px;
+    position: relative;
+    padding-top: 30px;
+}
+.userSignedIn .btn{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+.userSignedIn .userInfo > *{
+    margin: 20px 0;
+}
+.photoAlt{
+    background-color: #512DA8;
+    width: 150px;
+    height: 150px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 90px;
+    border-radius: 50%;
+}
+.userInfo h1{
+    color: #1493fa;
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+/* ALert */
+.alert{
+    text-align: center;
+}
+#errorMessage, .red{
+    color: red;
+    font-size: 14px;
+}
+#successMessage, .green{
+    color: green;
+    font-size: 14px;
+}
+
+/* Sign area */
+.signArea{
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px 2%;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px 3px #ccc;
+}
+
+/* Sign In with */
+.signInWith{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.signInWith > *{
+    display: inline-block;
+}
+.signInWith h3{
+    color: #1493fa;
+    margin-right: 15px;
+}
+.signInWith .btnImg{
+    display: flex;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+.signInWith .btnImg img{
+    height: 28px;
+}
+
+/* Form */
+form{
+    text-align: center;
+}
+form h2{
+    color: #1493fa;
+    margin-bottom: 25px;
+}
+
+.input{
+    width: 95%;
+    border-radius: 100px;
+    border: 1px solid #ddd;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+.submit{
+    margin: 10px 0 25px 0;
+}
+
+.formText{
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
