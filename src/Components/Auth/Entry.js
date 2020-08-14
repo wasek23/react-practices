@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import './Auth.css';
 import GoogleLogo from './img/google.svg';
 // import FacebookLogo from './img/facebook.png';
-import GithubLogo from './img/github.png';
-import YahooLogo from './img/yahoo.png';
-import MicrosoftLogo from './img/microsoft.png';
+import TwitterLogo from './img/twitter.svg';
+import GithubLogo from './img/github.svg';
+import YahooLogo from './img/yahoo.svg';
+import MicrosoftLogo from './img/microsoft.svg';
 // import PhoneLogo from './img/phone.svg';
 
 import { useAuth } from './useAuth';
@@ -109,11 +110,11 @@ const Entry = () => {
     // }
 
     // Twitter Sign In
-    // const twitterSignIn = () => {
-    //     auth.signInWithTwitter().then(res => {
-    //         window.location.pathname = '/auth/user-dashboard';
-    //     });
-    // }
+    const twitterSignIn = () => {
+        auth.signInWithTwitter().then(res => {
+            if (res.displayName) window.location.pathname = '/auth/user-dashboard';
+        });
+    }
 
     // Github Sign In
     const githubSignIn = () => {
@@ -189,6 +190,7 @@ const Entry = () => {
                             <h3>Sign in with: </h3>
                             <button onClick={googleSignIn} className="btnImg"><img src={GoogleLogo} alt="Google" /></button>
                             {/* <button onClick={facebookSignIn} className="btnImg"><img src={FacebookLogo} alt="Facebook" /></button> */}
+                            <button onClick={twitterSignIn} className="btnImg"><img src={TwitterLogo} alt="Twitter" /></button>
                             <button onClick={githubSignIn} className="btnImg"><img src={GithubLogo} alt="Github" /></button>
                             <button onClick={yahooSignIn} className="btnImg"><img src={YahooLogo} alt="Yahoo" /></button>
                             <button onClick={microsoftSignIn} className="btnImg"><img src={MicrosoftLogo} alt="Microsoft" /></button>
