@@ -46,13 +46,13 @@ const Header = () => {
 
                         <li><NavLink to='/contact' activeClassName='active'>Contact</NavLink></li>
 
-                        <li className='menu-item-has-children'><NavLink to='/auth' activeClassName='active'>Auth</NavLink>
+                        {/* <li className='menu-item-has-children'><NavLink to='/auth' activeClassName='active'>Auth</NavLink>
                             <ul>
                                 <li><NavLink to='/auth/home' activeClassName='active'>Home</NavLink></li>
                                 <li><NavLink to='/auth/entry' activeClassName='active'>Entry</NavLink></li>
                                 <li><NavLink to='/auth/user-dashboard' activeClassName='active'>User Dashboard</NavLink></li>
                             </ul>
-                        </li>
+                        </li> */}
                     </ul>
                 </nav>
             </div>

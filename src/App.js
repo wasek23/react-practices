@@ -25,70 +25,70 @@ import PatientManagement from './Components/Reducer/PatientManagement/PatientMan
 // import ContactForm from './Components/Contact/ContactForm';
 // import Form from './Components/Contact/Form';
 
-import AuthHome from './Components/Auth/AuthHome';
-import Entry from './Components/Auth/Entry';
-import UserDashboard from './Components/Auth/UserDashboard';
-import Account from './Components/Auth/Account';
-import { AuthContextProvider, PrivateRoute } from './Components/Auth/useAuth';
+// import AuthHome from './Components/Auth/AuthHome';
+// import Entry from './Components/Auth/Entry';
+// import UserDashboard from './Components/Auth/UserDashboard';
+// import Account from './Components/Auth/Account';
+// import { AuthContextProvider, PrivateRoute } from './Components/Auth/useAuth';
 
 function App() {
     return (
-        <AuthContextProvider>
-            <Router>
-                <Header />
+        // <AuthContextProvider>
+        <Router>
+            <Header />
 
-                <main id="mainPage">
-                    <Switch>
-                        <Route path='/basic/first-code'>
-                            <FirstCode />
-                        </Route>
-                        <Route path='/basic/functional-component'>
-                            <FunctionComp />
-                        </Route>
-                        <Route path='/basic/class-component'>
-                            <ClassComp />
-                        </Route>
+            <main id="mainPage">
+                <Switch>
+                    <Route path='/basic/first-code'>
+                        <FirstCode />
+                    </Route>
+                    <Route path='/basic/functional-component'>
+                        <FunctionComp />
+                    </Route>
+                    <Route path='/basic/class-component'>
+                        <ClassComp />
+                    </Route>
 
-                        <Route path='/props/functional-person'>
-                            <FunctionPerson name="Wasek Bellah" age="21" color="blue" />
-                        </Route>
-                        <Route path='/props/class-person'>
-                            <ClassPerson name="Wasek Bellah" age="21" color="blue" />
-                        </Route>
-                        <Route path='/props/products'>
-                            <Products />
-                        </Route>
+                    <Route path='/props/functional-person'>
+                        <FunctionPerson name="Wasek Bellah" age="21" color="blue" />
+                    </Route>
+                    <Route path='/props/class-person'>
+                        <ClassPerson name="Wasek Bellah" age="21" color="blue" />
+                    </Route>
+                    <Route path='/props/products'>
+                        <Products />
+                    </Route>
 
-                        <Route path='/state/counter'>
-                            <Counter />
-                        </Route>
-                        <Route path='/state/user'>
-                            <Users />
-                        </Route>
-                        <Route path='/state/my-state'>
-                            <MyState />
-                        </Route>
+                    <Route path='/state/counter'>
+                        <Counter />
+                    </Route>
+                    <Route path='/state/user'>
+                        <Users />
+                    </Route>
+                    <Route path='/state/my-state'>
+                        <MyState />
+                    </Route>
 
-                        <Route path='/recharts'>
-                            <Recharts />
-                        </Route>
-                        <Route path='/state-share'>
-                            <StateShare />
-                        </Route>
+                    <Route path='/recharts'>
+                        <Recharts />
+                    </Route>
+                    <Route path='/state-share'>
+                        <StateShare />
+                    </Route>
 
-                        <Route path='/reducer/reducer-count'>
-                            <ReducerCount />
-                        </Route>
-                        <Route path='/reducer/patient-management'>
-                            <PatientManagement />
-                        </Route>
+                    <Route path='/reducer/reducer-count'>
+                        <ReducerCount />
+                    </Route>
+                    <Route path='/reducer/patient-management'>
+                        <PatientManagement />
+                    </Route>
 
-                        <Route path='contact'>
-                            {/* <ContactForm />
+                    <Route path='contact'>
+                        {/* <ContactForm />
                         <Form /> */}
-                        </Route>
+                    </Route>
 
-                        <Route path='/auth/home'>
+                    {/* <Route path='/auth/home'>
                             <AuthHome />
                         </Route>
                         <Route path='/auth/entry'>
@@ -99,17 +99,17 @@ function App() {
                         </Route>
                         <PrivateRoute path='/auth/account'>
                             <Account />
-                        </PrivateRoute>
+                        </PrivateRoute> */}
 
-                        <Route path='/'>
-                            <section className="flexCenter">
-                                <h1 style={{ fontSize: '65px' }}>Welcome<br />to React Practices</h1>
-                            </section>
-                        </Route>
-                    </Switch>
-                </main>
-            </Router>
-        </AuthContextProvider>
+                    <Route path='/'>
+                        <section className="flexCenter">
+                            <h1 style={{ fontSize: '65px' }}>Welcome<br />to React Practices</h1>
+                        </section>
+                    </Route>
+                </Switch>
+            </main>
+        </Router>
+        // </AuthContextProvider>
     );
 }
 
